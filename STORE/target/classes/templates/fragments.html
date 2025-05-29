@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="logo" th:fragment="logo">
+    <img src="/logo.jpg">
+    <div id="message" th:text="${sessionObject.getInfo().orElse('')}"></div>
+</div>
+
+<div id="menu" th:fragment="menu">
+    <a href="/main" class="button">Strona Główna</a>
+    <a href="/contact" class="button">Kontakt</a>
+    <a th:if="${sessionObject.isLogged()}" href="/cart" class="button">Koszyk</a>
+    <a th:if="${sessionObject.isLogged()}" href="/order" class="button">Zamówienia</a>
+    <a th:if="${sessionObject.isAdmin()}" href="/book/add" class="button">Dodaj Książkę</a>
+    <a th:if="${!sessionObject.isLogged()}" href="/login" class="button">Zaloguj</a>
+    <a th:if="${sessionObject.isLogged()}" href="/logout" class="button">Wyloguj</a>
+</div>
+</body>
+</html>

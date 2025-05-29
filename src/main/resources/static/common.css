@@ -1,0 +1,79 @@
+/*
+#29363e - szary
+#e05d53 - czerwonawy
+*/
+
+#logo {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+#logo img {
+    height: 100%;
+}
+
+#menu {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#content {
+    margin: 30px 150px;
+    text-align: center;
+}
+
+.text-input {
+    text-align: center;
+    color: #29363e;
+    font-size: 22px;
+    border: 2px solid #29363e;
+    border-radius: 10px;
+    padding: 2px 15px;
+    transition: border 1s;
+    -webkit-transition: border 1s;
+    -ms-transition: border 1s;
+    background-color: white;
+}
+
+.text-input:hover {
+    border: 2px solid #e05d53;
+}
+
+.button {
+    text-decoration: none;
+    color: #29363e;
+    font-size: 22px;
+    margin: 0 10px;
+    border: 2px solid #29363e;
+    border-radius: 10px;
+    padding: 2px 15px;
+
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -ms-transition: all 1s;
+
+    cursor: pointer;
+    background-color: white;
+}
+
+.button:hover {
+    background-color: #e05d53;
+    color: white;
+}
+
+#message {
+    border: 1px solid black;
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    display: none;
+    width: 150px;
+    height: 100px;
+    background-color: #e05d53;
+    color: white;
+    font-size: 20px;
+    transition: display 2s;
+    -webkit-transition: display 2s;
+    -ms-transition: display 2s;
+}

@@ -1,0 +1,48 @@
+.row {
+    text-align: center;
+    border: 1px solid #29363e;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 20px;
+    margin: 10px auto;
+    color: #29363e
+    cursor: default;
+    transition: color, background-color 1s;
+    -webkit-transition: color, background-color 1s;
+    -ms-transition: color, background-color 1s;
+}
+
+.row:hover {
+    background-color: #e05d53;
+    color: white;
+}
+
+.row div {
+    display: inline-block;
+}
+.title {
+    width: 37%;
+}
+
+.author {
+    width: 28%;
+}
+
+.one-piece-price, .sum-price {
+    width: 10%;
+}
+
+.quantity {
+    width: 8%;
+}
+
+.bin {
+    width: 4%;
+    height: 35px;
+    display: inline-block;
+}
+
+.bin img {
+    height: 100%;
+    width: 100%;
+}
