@@ -176,9 +176,6 @@ Zwraca wszystkie zamówienia złożone przez użytkownika o danym ID.
 
 ---
 
-## 🖼️ Zrzuty ekranu
-
-📸 _Dodaj tutaj zrzuty ekranu z aplikacji – np. Swagger UI, logowanie, listowanie książek, zamówienia, itp._
 
 ---
 
